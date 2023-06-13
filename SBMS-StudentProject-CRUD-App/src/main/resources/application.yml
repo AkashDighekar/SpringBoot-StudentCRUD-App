@@ -1,0 +1,19 @@
+server:
+  port: 8082
+  
+spring:
+  datasource:
+      url: jdbc:h2:mem:testDb
+      username: sb
+      password: sb
+      driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      
+springdoc:
+  swagger-ui:
+    operationsSorter: method
+    use-root-path: true
+  version: '@springdoc.version@'  
