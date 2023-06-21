@@ -41,6 +41,7 @@ public class StudentServiceImpl implements IStudentServiceMgmt{
 			s.setName(std.getName());
 			s.setAge(std.getAge());
 			s.setPhone(std.getPhone());
+			s.setEmail(std.getEmail());
 			s.setBranch(std.getBranch());
 			s.setCollage(std.getCollage());
 			Student updateStd = repo.save(s);
